@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1; 
+}
+#name1
+{
+    color:#4285f4;
+    font-weight:bold;
+}
+.comment-box {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.comment-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.comment {
+    position: relative;
+}
+.comment-box button {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+.comment-box button:hover {
+    background-color: #357ae8;
+}
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.comment {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+.comment p {
+    margin: 0;
+}
+.comment:hover {
+    background-color: #f5f5f5;
+}
+.comment-box label {
+    font-weight: bold;
+}
+.comment-box input,
+.comment-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+#like
+{
+    width:25px;
+    height:25px;
+}
+
+#dis
+{
+    width:27px;
+    height:27px;
+}
+
+#heart
+{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+}
+
+#ls
+{
+    display:flex;
+    justify-content:space-around;
+}
+#reply {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#replybar {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#replyButton {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#replyButton:hover {
+    background-color: #357ae8;
+}
+

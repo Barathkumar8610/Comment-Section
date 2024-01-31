@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="comment-box">
+        <form action="/add-comment" method="post">
+            <p id="name1">Name : </p>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <textarea name="comment" placeholder="Write a comment..." rows="4" required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+    </div>
+    <br>
+    <br>
+
+    <div class="comments">
+            <div class="comment">
+                <p><strong>Boopathi Hari</strong> : The website is very fantastic.</p>
+                <br>
+                <div id="ld">
+                    <img src="like1.png" id="like">
+                    <img src="dis.png" id="dis">
+                    <img src="heart.webp" id="heart">
+                </div>
+                <br>
+                <div id="reply">
+                    <input type="text" placeholder="Reply for the Comment...." id="replybar" onfocus="showReplyBox()" onblur="hideReplyBox()">
+                    <button id="replyButton" onclick="submitReply()">Reply</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="comment">
+                <p><strong>BarathKumar</strong> : How are you???</p>
+                <br>
+                <div id="ld">
+                    <img src="like1.png" id="like">
+                    <img src="dis.png" id="dis">
+                    <img src="heart.webp" id="heart">
+                </div>
+                <br>
+                <div id="reply">
+                    <input type="text" placeholder="Reply for the Comment...." id="replybar" onfocus="showReplyBox()" onblur="hideReplyBox()">
+                    <button id="replyButton" onclick="submitReply()">Reply</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="comment">
+                <p><strong>Viswesvaran</strong> : It's amazing<p>
+                    <br>
+                    <div id="ld">
+                        <img src="like1.png" id="like">
+                        <img src="dis.png" id="dis">
+                        <img src="heart.webp" id="heart">
+                    </div>
+                    <br>
+                <div id="reply">
+                    <input type="text" placeholder="Reply for the Comment...." id="replybar" onfocus="showReplyBox()" onblur="hideReplyBox()">
+                    <button id="replyButton" onclick="submitReply()">Reply</button>
+                </div>
+            </div>
+            <br>
+            <br>
+    </div>
+
+    <div class="comments">
+        <% comments.forEach(comment => { %>
+            <div class="comment">
+                <p><strong><%= comment.name %> : </strong> <%= comment.comment %></p>
+                <br>
+                <div id="ld">
+                    <img src="like1.png" id="like">
+                    <img src="dis.png" id="dis">
+                    <img src="heart.webp" id="heart">
+                </div>
+                <br>
+                <div id="reply">
+                    <input type="text" placeholder="Reply for the Comment...." id="replybar" onfocus="showReplyBox()" onblur="hideReplyBox()">
+                    <button id="replyButton" onclick="submitReply()">Reply</button>
+                </div>
+                
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>

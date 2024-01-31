@@ -1,0 +1,9 @@
+To run the code ,first install all the express and ejs packages .
+
+And then ,write the command
+
+      " node comment.js " 
+
+And in the browser, type
+ 
+      " localhost:3000.comments "
